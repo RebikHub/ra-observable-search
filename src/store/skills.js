@@ -3,7 +3,7 @@ import {
   SEARCH_SKILLS_FAILURE,
   SEARCH_SKILLS_SUCCESS,
   CHANGE_SEARCH_FIELD,
-} from '../actions/actionTypes'
+} from './actions'
 
 const initialState = {
   items: [],
