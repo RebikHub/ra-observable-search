@@ -24,5 +24,5 @@ export default function Skills() {
                 {items.map(o => <li key={o.id}>{o.name}</li>)}
             </ul>}
         </Fragment>
-    )
-}
+    );
+};

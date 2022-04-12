@@ -3,6 +3,7 @@ import {
   SEARCH_SKILLS_FAILURE,
   SEARCH_SKILLS_SUCCESS,
   CHANGE_SEARCH_FIELD,
+  SEARCH_SKILLS_CLEAR
 } from './actions'
 
 const initialState = {
@@ -40,6 +41,13 @@ export default function skillsReducer(state = initialState, action) {
       return {
         ...state,
         search
+      };
+    case SEARCH_SKILLS_CLEAR:
+      console.log('reducer clear');
+      return {
+        items: [],
+        loading: false,
+        error: null,
       };
     default:
       return state;
